@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 const Home = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
 
-  // Effect to show scroll-to-top button on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -20,7 +19,6 @@ const Home = () => {
     };
   }, []);
 
-  // Function to scroll to top smoothly
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
